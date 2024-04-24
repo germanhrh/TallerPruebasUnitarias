@@ -14,6 +14,5 @@ describe("div", () => {
     expect(div(5, 0)).toBe(Infinity); // uso infinity para determinar que dividir por cero es una operacion indefinidad en las matematicas
   });
   
-
   
 });
