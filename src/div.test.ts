@@ -12,3 +12,4 @@ describe('div', () => {
     }).toThrow('Division by zero');
   });
 });
+

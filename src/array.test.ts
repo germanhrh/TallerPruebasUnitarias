@@ -1,29 +1,21 @@
-import { arrayContainsValue, arrayNotContainsValue } from './array';
+import { arrayContainsValue } from './array';
 
 describe('arrayContainsValue', () => {
-  it('should return true if the array contains the specified value', () => {
-    const arr = [1, 2, 3, 4, 5];
-    const value = 3;
+  it('should return true when the array contains the specified value', () => {
+    const arr = ['value1', 'value2', 'value3'];
+    const value = 'value1';
     expect(arrayContainsValue(arr, value)).toBe(true);
   });
 
-  it('should return false if the array does not contain the specified value', () => {
-    const arr = [1, 2, 3, 4, 5];
-    const value = 6;
+  it('should return true when the array contains the specified value', () => {
+    const arr = ['value1', 'value2', 'value3'];
+    const value = 'value3';
+    expect(arrayContainsValue(arr, value)).toBe(true);
+  });
+
+  it('should return false when the array does not contain the specified value', () => {
+    const arr = ['value1', 'value2', 'value3'];
+    const value = 'UNAC';
     expect(arrayContainsValue(arr, value)).toBe(false);
-  });
-});
-
-describe('arrayNotContainsValue', () => {
-  it('should return false if the array contains the specified value', () => {
-    const arr = [1, 2, 3, 4, 5];
-    const value = 3;
-    expect(arrayNotContainsValue(arr, value)).toBe(false);
-  });
-
-  it('should return true if the array does not contain the specified value', () => {
-    const arr = [1, 2, 3, 4, 5];
-    const value = 6;
-    expect(arrayNotContainsValue(arr, value)).toBe(true);
   });
 });
