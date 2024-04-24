@@ -65,3 +65,5 @@ Descripción: Esta prueba verifica que el array no contenga el valor 'UNAC'.
 Se corrigió la configuración para que el comando `npm test` funcione correctamente. Se agregaron scripts de prueba en el archivo `package.json` y se instalaron las dependencias necesarias.
 
 ---
+
+Angel Ramos
